@@ -1,0 +1,5 @@
+baseURL = 'https://manrique.dev/'
+languageCode = 'es-es'
+title = 'My New Hugo Site'
+theme = 'ananke'
+
