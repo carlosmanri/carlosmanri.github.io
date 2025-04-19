@@ -1,7 +1,7 @@
 baseURL = 'https://manrique.dev/'
 languageCode = 'es-es'
 title = 'Manrique.dev'
-theme = 'ananke'
+theme = 'PaperMod'
 
 DefaultContentLanguage = "es"
 googleAnalytics = "G-LZ04D7545K"
