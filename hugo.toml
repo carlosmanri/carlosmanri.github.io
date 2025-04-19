@@ -1,5 +1,8 @@
 baseURL = 'https://manrique.dev/'
 languageCode = 'es-es'
-title = 'My New Hugo Site'
+title = 'Manrique.dev'
 theme = 'ananke'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
