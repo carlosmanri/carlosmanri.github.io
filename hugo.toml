@@ -3,6 +3,14 @@ languageCode = 'es-es'
 title = 'Manrique.dev'
 theme = 'ananke'
 
+DefaultContentLanguage = "es"
+SectionPagesMenu = "main"
+Paginate = 10               
+googleAnalytics = "G-LZ04D7545K"
+enableRobotsTXT = true
+
+
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
