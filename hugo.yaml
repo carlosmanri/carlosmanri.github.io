@@ -1,0 +1,66 @@
+baseURL: https://manrique.dev/
+languageCode: es-es
+title: Manrique.dev
+theme: PaperMod
+
+googleAnalytics: G-LZ04D7545K
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: ExampleSite
+  description: ExampleSite description
+  keywords:
+    - Blog
+    - Portfolio
+    - PaperMod
+  author: Carlos Manrique
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  homeInfoParams:
+    Title: Hi there 👋
+    Content: Welcome to my blog
+  socialIcons:
+    - name: github
+      url: https://github.com/carlosmanri
+menu:
+  main:
+    - identifier: categories
+      name: categorías
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: manrique.dev
+      url: https://manrique.dev
+      weight: 30
+caches:
+  images:
+    dir: :cacheDir/images

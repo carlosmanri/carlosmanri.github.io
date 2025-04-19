@@ -1,8 +1,8 @@
-+++
-date = '2025-04-19T16:25:38+02:00'
-draft = false
-title = 'Codigo Morse'
-+++
+---
+date: "2025-04-19T16:25:38+02:00"
+draft: false
+title: Codigo Morse
+---
 
 
 
