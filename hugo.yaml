@@ -24,7 +24,7 @@ params:
     - Portfolio
     - PaperMod
   author: Carlos Manrique
-  defaultTheme: auto
+  defaultTheme: dark
   disableThemeToggle: false
   ShowReadingTime: true
   ShowShareButtons: true
@@ -43,12 +43,35 @@ params:
   tocopen: false
   homeInfoParams:
     Title: Hi there 👋
-    Content: Welcome to my blog
+    Content: >
+      Este es mi rincón para anotar y recordar lo que hago, descubro o investigo. Una especie de cuaderno personal, público por si a alguien más le sirve o le resulta interesante.
   socialIcons:
     - name: github
       url: https://github.com/carlosmanri
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+
 menu:
   main:
+    - name: Archive
+      url: archives
+      weight: 5
+    - name: Search
+      url: search/
+      weight: 10
     - identifier: categories
       name: categorías
       url: /categories/
@@ -61,6 +84,14 @@ menu:
       name: manrique.dev
       url: https://manrique.dev
       weight: 30
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
 caches:
   images:
     dir: :cacheDir/images
