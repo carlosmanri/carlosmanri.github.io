@@ -1,0 +1,64 @@
+{{- define "main" }}
+{{- $profile := hugo.Data.profile }}
+{{- partial "profile_styles.html" . }}
+<article class="profile-page">
+  <header class="profile-hero">
+    <div>
+      <p class="profile-kicker">{{ $profile.role }} · {{ $profile.location }}</p>
+      <h1 class="profile-title">{{ $profile.name }}</h1>
+      <p class="profile-headline">{{ $profile.summary }}</p>
+      <p class="profile-text">{{ $profile.recruiter_pitch }}</p>
+      <div class="profile-actions" aria-label="Enlaces principales">
+        <a class="profile-action" href="{{ $profile.cv_pdf }}">Descargar CV</a>
+        <a class="profile-action" href="https://github.com/carlosmanri" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="profile-action" href="https://www.linkedin.com/in/carlos-manrique-enguita/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+    <img class="profile-avatar" src="https://github.com/carlosmanri.png?size=360" alt="Retrato de {{ $profile.name }}" width="360" height="360" decoding="async">
+  </header>
+
+  <section class="profile-section">
+    <h2 class="profile-section-title">Ahora</h2>
+    {{- range first 1 $profile.experience }}
+    <p class="profile-text"><strong>{{ .role }}</strong> en {{ .company }} · {{ .period }}.</p>
+    <p class="profile-text">{{ .summary }}</p>
+    <ul class="profile-list">
+      {{- range .bullets }}
+      <li>{{ . }}</li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </section>
+
+  <section class="profile-section">
+    <h2 class="profile-section-title">Proyecto que resume bastante bien lo que me interesa</h2>
+    {{- with index $profile.projects 0 }}
+    <p class="profile-text"><strong>{{ .title }}</strong>. {{ .description }} {{ .impact }}</p>
+    {{- end }}
+  </section>
+
+  <section class="profile-section">
+    <h2 class="profile-section-title">Educación</h2>
+    {{- with index $profile.education 0 }}
+    <p class="profile-text"><strong>{{ .title }}</strong>, {{ .institution }}.</p>
+    <p class="profile-text">Realicé el grado en modalidad bilingüe, con parte de la docencia en inglés.</p>
+    {{- end }}
+  </section>
+
+  <section class="profile-section">
+    <h2 class="profile-section-title">Tecnologías con las que trabajo</h2>
+    <p class="profile-text">C#, Java, TypeScript, Python, SQL Server, PostgreSQL, ASP.NET Core, Spring Boot, React, Docker, Azure DevOps y GitHub Actions.</p>
+    <p class="profile-text">También me interesan DDD, arquitectura limpia, testing, seguridad, firma digital y sistemas distribuidos.</p>
+  </section>
+
+  <section class="profile-section">
+    <h2 class="profile-section-title">Fuera del trabajo</h2>
+    <p class="profile-text">Toco la guitarra y el bajo, me gustan los coches y viajar en moto. También trasteo con radioafición, domótica casera y un huerto automático con sensores y riego inteligente.</p>
+  </section>
+
+  <section class="profile-section">
+    <h2 class="profile-section-title">Contacto</h2>
+    <p class="profile-text">Puedes escribirme a <a href="mailto:{{ $profile.email }}">{{ $profile.email }}</a> o revisar mi perfil en <a href="https://github.com/carlosmanri" target="_blank" rel="noopener noreferrer">GitHub</a> y <a href="https://www.linkedin.com/in/carlos-manrique-enguita/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+  </section>
+</article>
+{{- end }}

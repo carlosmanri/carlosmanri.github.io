@@ -1,0 +1,170 @@
+name: Carlos Manrique Enguita
+role: Ingeniero de Software
+location: Gijón, Asturias
+email: carlos@manrique.dev
+cv_pdf: /CarlosManrique_CV_ES.pdf
+headline: Ingeniero de software en Gijón.
+summary: >
+  Soy ingeniero de software. Trabajo como full stack en Futuver desde 2020, sobre todo en aplicaciones de negocio,
+  firma digital, integraciones y modernización de sistemas que ya están en producción.
+recruiter_pitch: >
+  Me gusta entender bien el problema, trabajar cerca del dominio y dejar el código un poco más claro de cómo lo encontré.
+  Aquí dejo una versión corta de mi perfil, algunas notas y mi estantería técnica. El detalle completo está en el CV.
+focus:
+  - Arquitectura de software y sistemas empresariales
+  - Desarrollo full stack con .NET, Java, TypeScript y bases de datos
+  - Firma digital, identidad, seguridad y trazabilidad
+  - DevOps, testing, refactoring y modernización de aplicaciones heredadas
+  - Sistemas distribuidos, integración, mensajería y observabilidad
+links:
+  - label: GitHub
+    url: https://github.com/carlosmanri
+    kind: github
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/carlos-manrique-enguita/
+    kind: linkedin
+  - label: Descargar CV
+    url: /CarlosManrique_CV_ES.pdf
+    kind: internal
+  - label: Estantería
+    url: /bookshelf/
+    kind: internal
+highlights:
+  - label: Perfil
+    value: Ingeniero de Software
+    detail: Full stack, arquitectura, calidad y modernización
+  - label: Experiencia
+    value: Full Stack Engineer
+    detail: Futuver Consulting S.L. desde octubre de 2020
+  - label: Ubicación
+    value: Gijón
+    detail: Asturias, España
+experience:
+  - role: Full Stack Engineer
+    company: Futuver Consulting S.L.
+    location: Gijón, Asturias
+    period: Oct. 2020 - Actualidad
+    summary: >
+      Trabajo en aplicaciones de negocio para administraciones públicas y organizaciones privadas.
+    bullets:
+      - Desarrollo full stack con .NET, Java, TypeScript y bases de datos.
+      - Proyectos de firma digital, administración electrónica e integración de sistemas.
+      - Trabajo habitual con aplicaciones heredadas, refactoring, pruebas y despliegues.
+education:
+  - title: Máster Universitario en Ingeniería Informática
+    institution: Universidad de Oviedo
+    period: Sept. 2023 - Abr. 2024
+    details:
+      - Interrumpido por oportunidad profesional en el extranjero.
+  - title: Grado en Ingeniería Informática del Software
+    institution: Universidad de Oviedo
+    period: Sept. 2016 - May. 2023
+    details:
+      - Realizado en modalidad bilingüe, con docencia en inglés.
+      - Matrícula de honor en Tecnología y Paradigmas de la Programación.
+projects:
+  - title: Plataforma de Firma Biométrica
+    url: /cv/
+    period: Ago. 2022 - Jun. 2023
+    description: Trabajo de Fin de Grado calificado con 10.
+    impact: >
+      Diseñé una plataforma de firma electrónica biométrica para PDF, recogiendo evidencias del trazo manuscrito y
+      aplicando requisitos de firma digital.
+    tags:
+      - Firma digital
+      - eIDAS
+      - PDF
+      - Seguridad
+  - title: Flying Raspberry Pi
+    url: https://github.com/carlosmanri/Flying-Raspberry-Pi
+    description: Proyecto de globo de gran altitud con Raspberry Pi y un dispositivo móvil.
+    impact: Combina software, hardware, telemetría y resolución de problemas fuera del entorno puramente web.
+    tags:
+      - Python
+      - Raspberry Pi
+      - Hardware
+  - title: Viade
+    url: https://github.com/Arquisoft/viade_en2a
+    description: Aplicación académica de gestión de rutas descentralizada basada en Solid.
+    impact: Trabajo con arquitectura web, React, documentación técnica y decisiones de diseño.
+    tags:
+      - React
+      - Solid
+      - Arquitectura
+  - title: manrique.dev
+    url: https://github.com/carlosmanri/carlosmanri.github.io
+    description: Sitio personal construido con Hugo para publicar notas, lecturas y perfil profesional.
+    impact: Un espacio para mostrar criterio técnico, aprendizaje y comunicación escrita.
+    tags:
+      - Hugo
+      - Web
+      - Portfolio
+skill_groups:
+  - title: Lenguajes
+    items:
+      - C#
+      - Java
+      - JavaScript
+      - TypeScript
+      - Python
+      - VB.NET
+      - C
+  - title: Frameworks y web
+    items:
+      - ASP.NET Core
+      - Spring Boot
+      - .NET Framework
+      - Hibernate
+      - EF Core
+      - Blazor
+      - React
+      - Svelte
+  - title: Datos e integración
+    items:
+      - SQL Server
+      - PostgreSQL
+      - Redis
+      - MongoDB
+      - Neo4j
+      - RabbitMQ
+      - RESTful APIs
+  - title: Arquitectura y calidad
+    items:
+      - DDD
+      - SOLID
+      - Hexagonal / Clean / Ports & Adapters
+      - CQRS
+      - Event Driven
+      - Microservicios
+      - TDD
+  - title: DevOps y herramientas
+    items:
+      - Azure DevOps
+      - GitHub Actions
+      - Docker
+      - AWS
+      - Terraform
+      - Ansible
+      - Elastic Stack
+      - Grafana
+  - title: Seguridad y pruebas
+    items:
+      - JWT
+      - OAuth2
+      - OpenID Connect
+      - Entra ID
+      - Criptografía y firma digital
+      - xUnit
+      - JUnit
+      - Selenium
+      - SonarQube
+working_style:
+  - Entender el problema antes de elegir tecnología.
+  - Código legible, pruebas útiles y decisiones explicables.
+  - Mejorar sistemas existentes sin romper el negocio que ya soportan.
+  - Documentar lo justo para que otra persona pueda continuar.
+interests:
+  - "Música: guitarrista y bajista aficionado."
+  - "Motor: entusiasta del automóvil y los viajes en moto."
+  - "Huerto y domótica casera: sensores, riego inteligente y control energético."
+  - "Radioafición: diseño y montaje de estación propia para contactar con operadores de todo el mundo."

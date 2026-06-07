@@ -1,6 +1,11 @@
 baseURL: https://manrique.dev/
-languageCode: es-es
-title: Manrique.dev
+defaultContentLanguage: es
+languages:
+  es:
+    label: Español
+    locale: es-ES
+    weight: 1
+title: Carlos Manrique Enguita
 theme: PaperMod
 
 googleAnalytics: G-LZ04D7545K
@@ -17,12 +22,17 @@ minify:
 
 params:
   env: production
-  title: ExampleSite
-  description: ExampleSite description
+  title: Carlos Manrique Enguita
+  description: Perfil profesional, proyectos, notas y estantería técnica de Carlos Manrique Enguita.
   keywords:
-    - Blog
+    - Carlos Manrique Enguita
+    - Software Engineering
     - Portfolio
-    - PaperMod
+    - CV
+    - Hugo
+    - Arquitectura de software
+  schema:
+    publisherType: Person
   author: Carlos Manrique
   defaultTheme: dark
   disableThemeToggle: false
@@ -42,12 +52,16 @@ params:
   showtoc: false
   tocopen: false
   homeInfoParams:
-    Title: Hi there 👋
+    Title: Carlos Manrique Enguita
     Content: >
-      Este es mi rincón para anotar y recordar lo que hago, descubro o investigo. Una especie de cuaderno personal, público por si a alguien más le sirve o le resulta interesante.
+      Ingeniero de Software full stack. Este sitio reúne mi experiencia profesional, proyectos, notas y lecturas técnicas.
+  label:
+    text: manrique.dev
   socialIcons:
     - name: github
       url: https://github.com/carlosmanri
+    - name: linkedin
+      url: https://www.linkedin.com/in/carlos-manrique-enguita/
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -66,28 +80,34 @@ params:
 
 menu:
   main:
-    - name: Archive
-      url: archives
-      weight: 5
+    - identifier: home
+      name: Inicio
+      url: /
+      weight: 1
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 2
     - identifier: bookshelf
       name: Estantería
       url: /bookshelf/
-      weight: 7
-    - name: Search
-      url: search/
+      weight: 4
+    - identifier: notes
+      name: Notas
+      url: /posts/
+      weight: 5
+    - identifier: search
+      name: Buscar
+      url: /search/
       weight: 10
-    - identifier: categories
-      name: categorías
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: github
+      name: GitHub
+      url: https://github.com/carlosmanri
       weight: 20
-    - identifier: example
-      name: manrique.dev
-      url: https://manrique.dev
-      weight: 30
+    - identifier: linkedin
+      name: LinkedIn
+      url: https://www.linkedin.com/in/carlos-manrique-enguita/
+      weight: 21
 
 
 outputs:
