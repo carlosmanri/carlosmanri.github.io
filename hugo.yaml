@@ -69,6 +69,10 @@ menu:
     - name: Archive
       url: archives
       weight: 5
+    - identifier: bookshelf
+      name: Estantería
+      url: /bookshelf/
+      weight: 7
     - name: Search
       url: search/
       weight: 10

@@ -13,7 +13,6 @@ hidemeta: false
 comments: false
 description: "Desc Text."
 canonicalURL: "https://canonical.url/to/page"
-disableHLJS: true # to disable highlightjs
 disableShare: false
 disableHLJS: false
 hideSummary: false
@@ -193,4 +192,4 @@ This is pre text
 
 ### Github Gist
 
-{{< gist adityatelange 376cd56ee2c94aaa2e8b93200f2ba8b5 >}}
+[Gist de ejemplo](https://gist.github.com/adityatelange/376cd56ee2c94aaa2e8b93200f2ba8b5)
